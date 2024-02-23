@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 def recogn_num(num):
-    dec_list = ['.', ',']
     ret_str = f'Ви ввели некоректне число: {num}'
     num = num.replace(",", ".")
     sep_pos = num.find('.')
