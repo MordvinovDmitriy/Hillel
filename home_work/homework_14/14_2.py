@@ -7,7 +7,7 @@ def recogn_num(num):
     if num == '0':
         ret_str = 'Ви ввели нуль'
     elif len(num) > 0:
-        if num[0] == '-' and num.count('.') <= 1:
+        if len(num) > 2 and num[0] == '-' and num.count('.') <= 1:
             if num[1:].isdigit():
                 ret_str = f'Ви ввели від\'ємне ціле число: {int(num)}'
             elif num[1] == '.' and num[2:].isdigit() and len(num) > 2:
