@@ -3,7 +3,10 @@
 i = 1
 inp_dict = []
 while i < 5:
-    inp_dict.append(input(f'Введіть {i} строку:'))
+    inp_str = input(f'Введіть {i} строку:')
+    if len(inp_str) == 0:
+        continue
+    inp_dict.append(inp_str)
     i += 1
 inp_line1 = inp_dict[0]+'\n'
 inp_line2 = inp_dict[1]+'\n'
