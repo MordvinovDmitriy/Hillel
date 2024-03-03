@@ -6,6 +6,7 @@ import openpyxl
 wb = openpyxl.Workbook()
 csv_sheet = wb.active
 csv_sheet.title = "CSV"
+
 with open('json2csv.csv', 'r') as file_csv:
     csv_reader = csv.reader(file_csv, delimiter=';')
     for col_index, row in enumerate(csv_reader):
