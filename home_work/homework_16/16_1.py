@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 import json
 
 input_data = {143218: ('Bob', 43),

@@ -15,6 +15,7 @@ def random_number():
     else:
         return 'Номер відсутній'
 
+
 with open('inp.json', 'r') as file_json:
     json_data = json.load(file_json)
 
