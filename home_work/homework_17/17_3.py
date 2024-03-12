@@ -28,6 +28,7 @@ class circle(point):
         else:
             return point(new_circle_x, new_circle_y)
 
+
 '''
 circle_1 = circle(3, 4, 5)
 circle_2 = circle(6, 5, 6)
