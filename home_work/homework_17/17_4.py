@@ -11,8 +11,3 @@ class String(str):
     def __sub__(self, other):
         return String(str(self.value).replace(str(other), '', 1))
 
-
-q = String('New') + None
-w = String(55678345672) - 7
-print(type(q))
-print(w)
